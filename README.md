@@ -1,3 +1,7 @@
+# How do we build 2.20.6?
+
+docker build --build-arg GS_VERSION=2.20.6 -t pascallike/geoserver:2.20.6 .
+
 # Table of Contents
 * [Kartoza docker-geoserver](#kartoza-docker-geoserver)
    * [Getting the image](#getting-the-image)
