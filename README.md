@@ -1,6 +1,10 @@
-# How do we build 2.20.6?
+# What is this version?
 
-docker build --build-arg GS_VERSION=2.20.6 -t pascallike/geoserver:2.20.6 .
+It's a [2.20.6](https://github.com/PascalLike/docker-geoserver/tree/2.20.6) with extra logging in the oauth2-openid plugin.
+
+# How do we build 2.20.6.LOGS?
+
+docker build --build-arg GS_VERSION=2.20.6 -t pascallike/geoserver:2.20.6.LOGS .
 
 # Table of Contents
 * [Kartoza docker-geoserver](#kartoza-docker-geoserver)
