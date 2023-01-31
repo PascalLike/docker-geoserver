@@ -2,6 +2,23 @@
 
 It's a [2.20.6](https://github.com/PascalLike/docker-geoserver/tree/2.20.6) with extra logging in the oauth2-openid plugin.
 
+# Size fix
+
+To reduce the size of the image, only the used extensions are now kept in
+
+   ```
+build_data/community_plugins.txt
+build_data/stable_plugins.txt
+   ```
+
+Backup copies of the files are available here (in case you'll need to use more extensions) 
+
+   ```
+build_data/community_plugins_backup.txt
+build_data/stable_plugins_backup.txt
+   ```
+
+
 # How do we build 2.20.6.LOGS?
 
 docker build --build-arg GS_VERSION=2.20.6 -t pascallike/geoserver:2.20.6.LOGS .
